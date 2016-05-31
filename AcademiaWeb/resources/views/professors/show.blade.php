@@ -1,13 +1,15 @@
 @extends('layout')
 @section('header')
 <div class="page-header">
-        <h1>Professors / Show #{{$professor->id}}</h1>
-        <form action="{{ route('professors.destroy', $professor->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
+    <div class="well well-sm">
+        <h2><i class="glyphicon glyphicon-eye-open"></i></i> Visualizar Professor #{{$professor->nome}}</h2>
+    </div>
+        <form action="{{ route('professors.destroy', $professor->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Gostaria de excluir?')) { return true } else {return false };">
             <input type="hidden" name="_method" value="DELETE">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="btn-group pull-right" role="group" aria-label="...">
-                <a class="btn btn-warning btn-group" role="group" href="{{ route('professors.edit', $professor->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
-                <button type="submit" class="btn btn-danger">Delete <i class="glyphicon glyphicon-trash"></i></button>
+                <a class="btn btn-warning btn-group" role="group" href="{{ route('professors.edit', $professor->id) }}"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                <button type="submit" class="btn btn-danger">Excluir <i class="glyphicon glyphicon-trash"></i></button>
             </div>
         </form>
     </div>
@@ -31,13 +33,13 @@
                      <p class="form-control-static">{{$professor->idade}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="area_atuacao">AREA_ATUACAO</label>
+                     <label for="area_atuacao">ÁREA ATUANTE</label>
                      <p class="form-control-static">{{$professor->area_atuacao}}</p>
                 </div>
+                <div class="well well-sm">
+            <a class="btn btn-warning" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
+                </div>
             </form>
-
-            <a class="btn btn-link" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-backward"></i>  Back</a>
-
         </div>
     </div>
 

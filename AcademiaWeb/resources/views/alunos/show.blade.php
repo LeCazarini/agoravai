@@ -1,13 +1,13 @@
 @extends('layout')
 @section('header')
 <div class="page-header">
-        <h1>Alunos / Show #{{$aluno->id}}</h1>
-        <form action="{{ route('alunos.destroy', $aluno->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
+        <h2><i class="glyphicon glyphicon-eye-open"></i> Alunos / Visualizar #{{$aluno->nome}}</h2>
+        <form action="{{ route('alunos.destroy', $aluno->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Deseja deletar esse aluno?')) { return true } else {return false };">
             <input type="hidden" name="_method" value="DELETE">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="btn-group pull-right" role="group" aria-label="...">
-                <a class="btn btn-warning btn-group" role="group" href="{{ route('alunos.edit', $aluno->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
-                <button type="submit" class="btn btn-danger">Delete <i class="glyphicon glyphicon-trash"></i></button>
+                <a class="btn btn-warning btn-group" role="group" href="{{ route('alunos.edit', $aluno->id) }}"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                <button type="submit" class="btn btn-danger">Deletar <i class="glyphicon glyphicon-trash"></i></button>
             </div>
         </form>
     </div>
@@ -31,20 +31,20 @@
                      <p class="form-control-static">{{$aluno->idade}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="peso_incial">PESO_INCIAL</label>
+                     <label for="peso_incial">PESO INCIAL</label>
                      <p class="form-control-static">{{$aluno->peso_incial}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="peso_final">PESO_FINAL</label>
+                     <label for="peso_final">PESO FINAL</label>
                      <p class="form-control-static">{{$aluno->peso_final}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="id_professor">ID_PROFESSOR</label>
+                     <label for="id_professor">ID PROFESSOR</label>
                      <p class="form-control-static">{{$aluno->id_professor}}</p>
                 </div>
             </form>
 
-            <a class="btn btn-link" href="{{ route('alunos.index') }}"><i class="glyphicon glyphicon-backward"></i>  Back</a>
+            <a class="btn btn-primary" href="{{ route('alunos.index') }}"><i class="glyphicon glyphicon-backward"></i>  Voltar</a>
 
         </div>
     </div>

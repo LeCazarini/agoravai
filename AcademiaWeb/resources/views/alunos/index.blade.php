@@ -4,7 +4,7 @@
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Alunos
-            <a class="btn btn-success pull-right" href="{{ route('alunos.create') }}"><i class="glyphicon glyphicon-plus"></i> Create</a>
+            <a class="btn btn-success pull-right" href="{{ route('alunos.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Aluno</a>
         </h1>
 
     </div>
@@ -20,10 +20,10 @@
                             <th>ID</th>
                             <th>NOME</th>
                         <th>IDADE</th>
-                        <th>PESO_INCIAL</th>
-                        <th>PESO_FINAL</th>
-                        <th>ID_PROFESSOR</th>
-                            <th class="text-right">OPTIONS</th>
+                        <th>PESO INCIAL</th>
+                        <th>PESO FINAL</th>
+                        <th>ID PROFESSOR</th>
+                            <th class="text-right">OPÇÕES</th>
                         </tr>
                     </thead>
 
@@ -37,8 +37,8 @@
                     <td>{{$aluno->peso_final}}</td>
                     <td>{{$aluno->id_professor}}</td>
                                 <td class="text-right">
-                                    <a class="btn btn-xs btn-primary" href="{{ route('alunos.show', $aluno->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
-                                    <a class="btn btn-xs btn-warning" href="{{ route('alunos.edit', $aluno->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                                    <a class="btn btn-xs btn-primary" href="{{ route('alunos.show', $aluno->id) }}"><i class="glyphicon glyphicon-eye-open"></i> Visualizar</a>
+                                    <a class="btn btn-xs btn-warning" href="{{ route('alunos.edit', $aluno->id) }}"><i class="glyphicon glyphicon-edit"></i> Editar</a>
                                     <form action="{{ route('alunos.destroy', $aluno->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -51,7 +51,7 @@
                 </table>
                 {!! $alunos->render() !!}
             @else
-                <h3 class="text-center alert alert-info">Empty!</h3>
+                <h3 class="text-center alert alert-info">Lista Vazia!</h3>
             @endif
 
         </div>

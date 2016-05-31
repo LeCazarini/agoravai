@@ -4,8 +4,10 @@
 @endsection
 @section('header')
     <div class="page-header">
-        <h1><i class="glyphicon glyphicon-edit"></i> Alunos / Edit #{{$aluno->id}}</h1>
+        <div class="well well-sm">
+        <h1><i class="glyphicon glyphicon-edit"></i> Alunos / Editar #{{$aluno->nome}}</h1>
     </div>
+        </div>
 @endsection
 
 @section('content')
@@ -33,29 +35,29 @@
                        @endif
                     </div>
                     <div class="form-group @if($errors->has('peso_incial')) has-error @endif">
-                       <label for="peso_incial-field">Peso_incial</label>
+                       <label for="peso_incial-field">Peso incial</label>
                     <input type="text" id="peso_incial-field" name="peso_incial" class="form-control" value="{{ $aluno->peso_incial }}"/>
                        @if($errors->has("peso_incial"))
                         <span class="help-block">{{ $errors->first("peso_incial") }}</span>
                        @endif
                     </div>
                     <div class="form-group @if($errors->has('peso_final')) has-error @endif">
-                       <label for="peso_final-field">Peso_final</label>
+                       <label for="peso_final-field">Peso final</label>
                     <input type="text" id="peso_final-field" name="peso_final" class="form-control" value="{{ $aluno->peso_final }}"/>
                        @if($errors->has("peso_final"))
                         <span class="help-block">{{ $errors->first("peso_final") }}</span>
                        @endif
                     </div>
                     <div class="form-group @if($errors->has('id_professor')) has-error @endif">
-                       <label for="id_professor-field">Id_professor</label>
+                       <label for="id_professor-field">Id Professor</label>
                     <input type="text" id="id_professor-field" name="id_professor" class="form-control" value="{{ $aluno->id_professor }}"/>
                        @if($errors->has("id_professor"))
                         <span class="help-block">{{ $errors->first("id_professor") }}</span>
                        @endif
                     </div>
                 <div class="well well-sm">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <a class="btn btn-link pull-right" href="{{ route('alunos.index') }}"><i class="glyphicon glyphicon-backward"></i>  Back</a>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <a class="btn btn-primary pull-right" href="{{ route('alunos.index') }}"><i class="glyphicon glyphicon-backward"></i> Voltar</a>
                 </div>
             </form>
 
