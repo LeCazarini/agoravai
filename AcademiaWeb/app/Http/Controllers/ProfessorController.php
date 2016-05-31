@@ -27,7 +27,10 @@ class ProfessorController extends Controller {
 	 */
 	public function create()
 	{
-		return view('professors.create');
+		
+		$id_professor = ProfessorController::orderBy('id_professor', 'asc')->get();
+		return view('aluno.create')->with('id_professor', $id_professor);
+		/*return view('professors.create');*/
 	}
 
 	/**

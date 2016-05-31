@@ -47,6 +47,7 @@
                         <span class="help-block">{{ $errors->first("peso_final") }}</span>
                        @endif
                     </div>
+                    
                     <div class="form-group @if($errors->has('id_professor')) has-error @endif">
                        <label for="id_professor-field">Id Professor</label>
                     <input type="text" id="id_professor-field" name="id_professor" class="form-control" value="{{ old("id_professor") }}"/>

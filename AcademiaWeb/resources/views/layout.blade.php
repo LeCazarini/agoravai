@@ -7,8 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-
+    <link rel="icon" href="download.png">
     <title>AcademiaWeb</title>
 
     <!-- Bootstrap core CSS -->
@@ -41,9 +40,10 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="#about"></a></li>
-                    <li><a href="#contact"></a></li>
+                    
+                    <li><a href="{{ url('/professors') }}">Área do Professor</a></li>
+                    <li><a href="{{ url('/alunos') }}">Área do Aluno</a></li>
+                    
                 </ul>
                 <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">

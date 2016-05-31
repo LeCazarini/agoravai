@@ -47,9 +47,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/professors') }}">Área do Professor</a></li>
-                    <li><a href="{{ url('/alunos') }}">Área do Aluno</a></li>
+                    
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -58,6 +56,7 @@
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Entrar</a></li>
                         <li><a href="{{ url('/register') }}">Cadastrar</a></li>
+                        
                         
                     @else
                         <li class="dropdown">
