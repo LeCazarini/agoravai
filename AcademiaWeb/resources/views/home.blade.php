@@ -49,6 +49,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/professors') }}">Área do Professor</a></li>
                     <li><a href="{{ url('/alunos') }}">Área do Aluno</a></li>
+                    
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -64,10 +65,11 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
-
+                        
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Sair</a></li>
                             </ul>
+                            
                         </li>
                     @endif
                 </ul>
@@ -78,12 +80,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">AcademiaWeb</div>
+        <div class="col-md-10 col-md-offset">
+            <div class="panel panel">
+                <div class="panel-heading"></div>
 
                 <div class="panel-body">
-                    <h1><center>Seja vem vindo a AcademiaWeb!</center></h1>
+                    <center><h1>Seja vem vindo a AcademiaWeb!</h1></center>
                 </div>
                  <center><img src="img/picapau.png"></center>
             </div>

@@ -6,6 +6,7 @@
     <div class="page-header">
         <div class="well well-sm">
         <h1><i class="glyphicon glyphicon-plus"></i> Alunos / Adicionar </h1>
+        
     </div>
         </div>
 @endsection

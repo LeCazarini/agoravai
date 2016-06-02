@@ -47,8 +47,8 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Área do Professor</a></li>
-                    <li><a href="{{ url('/home') }}">Área do Aluno</a></li>
+                    <!--<li><a href="{{ url('/home') }}">Área do Professor</a></li>
+                    <li><a href="{{ url('/home') }}">Área do Aluno</a></li>-->
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -78,16 +78,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">AcademiaWeb</div>
+        <div class="col-md-15 col-md-offset">
+            <div class="panel panel">
+                <div class="panel-heading"></div>
 
                 <div class="panel-body">
-                    <h1><center>Olá! Seja vindo a AcademiaWeb!!!</center></h1
-                    <h2><center> AcADEmIa Do AsDRuBaL!</center></h2>
+                    <h1><center>Olá! <br /> Seja vindo a AcademiaWeb!</center></h1
                     <br/>
                     <br/>
-                    <center><img src="img/Foto2.png"></center>
+                    <center><img src="img/fr.jpg"></center>
+                    <center><b> <h3>"Fecha a cara e treina seu frango!"</h3></b></center>
                 </div>
                  
             </div>
