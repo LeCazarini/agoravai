@@ -3,7 +3,7 @@
 <div class="page-header">
     <div class="well well-sm">
         <h2><i class="glyphicon glyphicon-eye-open"></i> Professor(a)</h2>
-        <h2>{{$professor->nome}}</h2>
+        <h2>--> {{$professor->nome}}</h2>
     </div>
         <form action="{{ route('professors.destroy', $professor->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Gostaria de excluir?')) { return true } else {return false };">
             <input type="hidden" name="_method" value="DELETE">

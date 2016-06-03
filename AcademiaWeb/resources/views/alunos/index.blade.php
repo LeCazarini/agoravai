@@ -55,7 +55,7 @@
                 <h3 class="text-center alert alert-info">Lista Vazia!</h3>
             @endif
             <div class="well well-sm">
-                <a class="btn btn-warning btn-group" role="group" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
+                <a class="btn btn-warning btn-group" role="group" href="{{ url('/home') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
             </div>
         </div>
     </div>

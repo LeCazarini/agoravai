@@ -2,7 +2,10 @@
 
 @section('header')
 <div class="page-header">
-        <h2><i class="glyphicon glyphicon-eye-open"></i> Alunos / Visualizar #{{$aluno->nome}}</h2>
+    <div class="well well-sm">
+        <h2><i class="glyphicon glyphicon-eye-open"></i> Professor(a)</h2>
+        <h2>--> {{$aluno->nome}}</h2>
+    </div>
         <form action="{{ route('alunos.destroy', $aluno->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Deseja deletar esse aluno?')) { return true } else {return false };">
             <input type="hidden" name="_method" value="DELETE">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
