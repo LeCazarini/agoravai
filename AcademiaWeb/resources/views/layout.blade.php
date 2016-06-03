@@ -41,8 +41,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     
-                    <li><a href="{{ url('/professors') }}">Área do Professor</a></li>
-                    <li><a href="{{ url('/alunos') }}">Área do Aluno</a></li>
+                    
                     
                 </ul>
                 <div id="navbar" class="collapse navbar-collapse">

@@ -47,7 +47,8 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    
+                    <li><a href="{{ url('professors') }}">Área do Professor</a></li>
+                    <li><a href="{{ url('alunos') }}">Área do Aluno</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

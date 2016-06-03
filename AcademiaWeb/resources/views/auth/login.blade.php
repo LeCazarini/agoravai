@@ -129,7 +129,6 @@
                                     <i class="fa fa-btn fa-sign-in"></i>Entrar
                                 </button>
 
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Esqueceu a senha?</a>
                             </div>
                         </div>
                     </form>
