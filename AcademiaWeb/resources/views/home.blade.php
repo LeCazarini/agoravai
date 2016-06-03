@@ -84,7 +84,7 @@
             <div class="panel panel">
                 <div class="panel-heading"></div>
                     <div class="panel-body">
-                        <center><h1>Seja bem vindo a AcademiaWeb!</h1></center>
+                        <center><h1>Acesso Administrativo AcademiaWeb!</h1></center>
                         <br />
                         <div class="btn-group btn-group-justified" role="group" aria-label="...">
                           <div class="btn-group" role="group">

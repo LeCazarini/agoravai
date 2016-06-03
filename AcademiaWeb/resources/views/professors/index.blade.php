@@ -4,7 +4,7 @@
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Professores
-            <a class="btn btn-success pull-right" href="{{ route('alunos.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Aluno</a>
+           
             <a class="btn btn-warning pull-right" href="{{ route('professors.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Professor</a>
         </h1>
 
