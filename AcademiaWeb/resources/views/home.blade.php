@@ -47,8 +47,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/professors') }}">Área do Professor</a></li>
-                    <li><a href="{{ url('/alunos') }}">Área do Aluno</a></li>
+                    
                     
                 </ul>
 
@@ -83,16 +82,31 @@
         <div class="col-md-10 col-md-offset">
             <div class="panel panel">
                 <div class="panel-heading"></div>
+                    <div class="panel-body">
+                        <center><h1>Seja bem vindo a AcademiaWeb!</h1></center>
+                        <br />
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                          <div class="btn-group" role="group">
+                            <a class="btn btn-warning btn-group role="group" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-user"></i> Área do Professor</a>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <a class="btn btn-primary btn-group pull-right" role="group" href="{{ route('alunos.index') }}"><i class="glyphicon glyphicon-user"></i> Área do Aluno</a>
+                          </div>
+                        </div>
 
-                <div class="panel-body">
-                    <center><h1>Seja vem vindo a AcademiaWeb!</h1></center>
+                        <div class="row">
+                            <div class="col-md-10 col=md-offset"</div>
+                        </div>
+                    </div>
                 </div>
-                 <center><img src="img/picapau.png"></center>
             </div>
         </div>
+        <center><img src="img/picapau.png"></center>
     </div>
 </div>
+
 @endsection
+
 
 @yield('content')
 

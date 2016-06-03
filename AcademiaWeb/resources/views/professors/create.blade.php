@@ -20,21 +20,21 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <div class="form-group @if($errors->has('nome')) has-error @endif">
-                       <label for="nome-field">Nome</label>
+                       <label for="nome-field">NOME</label>
                     <input type="text" id="nome-field" name="nome" class="form-control" value="{{ old("nome") }}"/>
                        @if($errors->has("nome"))
                         <span class="help-block">{{ $errors->first("nome") }}</span>
                        @endif
                     </div>
                     <div class="form-group @if($errors->has('idade')) has-error @endif">
-                       <label for="idade-field">Idade</label>
+                       <label for="idade-field">IDADE</label>
                     <input type="text" id="idade-field" name="idade" class="form-control" value="{{ old("idade") }}"/>
                        @if($errors->has("idade"))
                         <span class="help-block">{{ $errors->first("idade") }}</span>
                        @endif
                     </div>
                     <div class="form-group @if($errors->has('area_atuacao')) has-error @endif">
-                       <label for="area_atuacao-field">Área Atuacao</label>
+                       <label for="area_atuacao-field">ÁREA ATUAÇÃO</label>
                     <input type="text" id="area_atuacao-field" name="area_atuacao" class="form-control" value="{{ old("area_atuacao") }}"/>
                        @if($errors->has("area_atuacao"))
                         <span class="help-block">{{ $errors->first("area_atuacao") }}</span>

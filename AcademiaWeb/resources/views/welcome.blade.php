@@ -83,7 +83,7 @@
                 <div class="panel-heading"></div>
 
                 <div class="panel-body">
-                    <h1><center>Olá! <br /> Seja vindo a AcademiaWeb!</center></h1
+                    <h1><center>Olá! <br /> Seja vindo a AcademiaWeb!</center></h1>
                     <br/>
                     <br/>
                     <center><img src="img/fr.jpg"></center>

@@ -25,6 +25,13 @@ class AlunoController extends Controller {
 	 *
 	 * @return Response
 	 */
+	 
+	 	 public function view()
+	 {
+	 	return view('professors.view', compact('professor'));
+	 }
+	 
+	 
 	public function create()
 	{
 		

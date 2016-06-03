@@ -4,6 +4,7 @@
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Professores
+            <a class="btn btn-warning pull-right" href="{{ route('alunos.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Aluno</a>
             <a class="btn btn-success pull-right" href="{{ route('professors.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Professor</a>
         </h1>
 
@@ -20,7 +21,7 @@
                             <th>ID</th>
                             <th>NOME</th>
                         <th>IDADE</th>
-                        <th>AREA_ATUANTE</th>
+                        <th>AREA ATUAÇÃO</th>
                             <th class="text-right">OPÇÕES</th>
                         </tr>
                     </thead>
@@ -50,7 +51,7 @@
                 <h3 class="text-center alert alert-info">Lista Vazia</h3>
             @endif
                         <div class="well well-sm">
-                    <a class="btn btn-warning " href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
+                    <a class="btn btn-warning " href="{{ url('/home') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
                 </div>
         </div>
     </div>

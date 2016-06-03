@@ -2,7 +2,8 @@
 @section('header')
 <div class="page-header">
     <div class="well well-sm">
-        <h2><i class="glyphicon glyphicon-eye-open"></i></i> Visualizar Professor #{{$professor->nome}}</h2>
+        <h2><i class="glyphicon glyphicon-eye-open"></i> Professor(a)</h2>
+        <h2>{{$professor->nome}}</h2>
     </div>
         <form action="{{ route('professors.destroy', $professor->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Gostaria de excluir?')) { return true } else {return false };">
             <input type="hidden" name="_method" value="DELETE">
@@ -21,9 +22,12 @@
 
             <form action="#">
                 <div class="form-group">
-                    <label for="nome">ID</label>
-                    <p class="form-control-static"></p>
+                    
+                    <div class="form-group">
+                     <label for="nome">ID:</label>
+                     <p class="form-control-static">{{$professor->id}}</p>
                 </div>
+                
                 <div class="form-group">
                      <label for="nome">NOME</label>
                      <p class="form-control-static">{{$professor->nome}}</p>
@@ -33,7 +37,7 @@
                      <p class="form-control-static">{{$professor->idade}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="area_atuacao">ÁREA ATUANTE</label>
+                     <label for="area_atuacao">ÁREA ATUAÇÃO</label>
                      <p class="form-control-static">{{$professor->area_atuacao}}</p>
                 </div>
                 <div class="well well-sm">

@@ -5,6 +5,7 @@
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Alunos
             <a class="btn btn-success pull-right" href="{{ route('alunos.create') }}"><i class="glyphicon glyphicon-plus"></i> Adicionar Aluno</a>
+            <p> <a class="btn btn-success pull-right" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-plus"></i> Visualizar Professores</a></p>
         </h1>
 
     </div>
@@ -53,7 +54,9 @@
             @else
                 <h3 class="text-center alert alert-info">Lista Vazia!</h3>
             @endif
-
+            <div class="well well-sm">
+                <a class="btn btn-warning btn-group" role="group" href="{{ route('professors.index') }}"><i class="glyphicon glyphicon-hand-left"></i> Voltar</a>
+            </div>
         </div>
     </div>
 

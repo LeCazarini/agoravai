@@ -1,4 +1,5 @@
 @extends('layout')
+
 @section('header')
 <div class="page-header">
         <h2><i class="glyphicon glyphicon-eye-open"></i> Alunos / Visualizar #{{$aluno->nome}}</h2>
